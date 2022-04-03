@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import useCart from '../../hooks/useCart';
 import useProducts from '../../hooks/useProducts';
 import { removeFromDb } from '../../utilities/fakedb';
@@ -8,7 +8,7 @@ import ReviewItems from '../ReviewItems/ReviewItems';
 import './Orders.css';
 
 const Orders = () => {
-    const [products, setProducts] = useProducts();
+    const [products,] = useProducts();
     const [cart, setCart] = useCart(products);
     const navigate = useNavigate();
 
