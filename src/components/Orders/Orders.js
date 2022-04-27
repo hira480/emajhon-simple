@@ -8,8 +8,8 @@ import ReviewItems from '../ReviewItems/ReviewItems';
 import './Orders.css';
 
 const Orders = () => {
-    const [products,] = useProducts();
-    const [cart, setCart] = useCart(products);
+    const [products] = useProducts();
+    const [cart, setCart] = useCart();
     const navigate = useNavigate();
 
     const handelRemoveProduct = product => {
